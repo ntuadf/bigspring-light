@@ -1,8 +1,11 @@
-<section class="section pb-0">
-  <div class="container text-center">
-    <h1 class="display-3">{{ .Title | markdownify }}</h1>
+{{ with .Params.banner }}
+<section>
+  <div class="text-center">
+    {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-6" width="750px">{{end}}
+    <h1 class="display-6">{{ .Title | markdownify }}</h1>
     {{ with .Params.subtitle }}
     <p>{{ . | markdownify }}</p>
     {{ end }}
   </div>
 </section>
+{{ end }}
