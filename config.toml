@@ -16,6 +16,7 @@ border_color = "#ECECEC"
 black = "#000"
 white = "#fff"
 light = "#EDF6F5"
+hyperlink_color = "cornflowerblue"
 
 # font variable
 # Give your font name from google font. add font weight using ":wght@" and separate by ";"
