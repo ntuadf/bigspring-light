@@ -1,6 +1,11 @@
 <footer class="bg-light section pb-0">
   <div class="container">
     <div class="row">
+      <a class="d-block col-12 h5" href="{{ site.BaseURL | absLangURL}}/home">
+        {{site.Params.title_en}}
+      </a>
+    </div>
+    <!-- <div class="row">
       <div class="col-md-3 col-sm-6 mb-5">
         {{ if site.Menus.footer_left }}
         <div class="h3 mb-4">{{ site.Params.footer_menu_left }}</div>
@@ -35,9 +40,9 @@
         <a class="d-block h5 mb-2" href="{{ site.BaseURL | absLangURL}}">
           {{ with site.Params.logo}}
           <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
-          {{ else }}{{site.Params.title_en}}{{end}}
+          {{ end }}
         </a>
       </div>
-    </div>
+    </div> -->
   </div>
 </footer>
